@@ -5,15 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --debug src/app.js"
+    "start": "nodemon src/app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.14.0",
-    "jade": "^1.11.0"
-  },
-  "devDependencies": {
+    "jade": "^1.11.0",
+    "nodemon": "^1.10.0",
     "pug": "^2.0.0-beta4"
   }
 }
