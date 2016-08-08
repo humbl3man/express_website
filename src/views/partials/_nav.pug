@@ -1,0 +1,23 @@
+nav#top_nav.site-nav
+	.container
+		ul.list-inline.list-unstyled
+			li 
+				if url == '/'
+					a(href="/" class="active") Home
+				else
+					a(href="/") Home
+			li 
+				if url == '/team'
+					a(href="/team" class="active") Team
+				else
+					a(href="/team") Team
+			li 
+				if url == '/about'
+					a(href="/about" class="active") About
+				else
+					a(href="/about") About
+			li 
+				if url == '/blogs'
+					a(href="/blogs" class="active") Blog
+				else
+					a(href="/blogs") Blog

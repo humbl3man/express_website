@@ -1,0 +1,15 @@
+extends ./layout.pug
+block content
+	header 
+		h1 Blog
+	section.content
+		.container
+			.row
+				.col-sm-6.col-sm-offset-3
+					each blog, blogIndex in blogList
+						article.blog
+							h2.blog-title #{blog.title}
+							p.blog-text #{blog.short_description}
+							br
+							p
+								a(href="/blogs/" + blog.title, class="c-button") Read More &gt;

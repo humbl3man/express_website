@@ -1,0 +1,15 @@
+extends ./layout.pug
+block content
+	header 
+		h1 #{blog.title}
+	section.content
+		.container
+			p.text-center
+				a(href="/blogs" class="c-button") &lt;&lt; All Blogs
+			br
+			br
+			.row
+				.col-sm-8.col-sm-offset-2
+					article.blog
+						h2.blog-title #{blog.title}
+						p.blog-text #{blog.long_description}

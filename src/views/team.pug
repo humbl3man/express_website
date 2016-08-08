@@ -1,0 +1,14 @@
+extends ./layout.pug
+block content
+	header
+		h1 Team
+	section.content
+		.container
+			.row
+				each teammate in teamList
+					.col-sm-4
+						article.teammate
+							a(href="/team/" + teammate.name)
+								img(class="teammate-img temmate-img-animated img-responsive center-block" src="" + teammate.avatar)
+							h3 #[span.teammate-name #{teammate.name}]
+							p #[span.teammate-profession #{teammate.profession}]
