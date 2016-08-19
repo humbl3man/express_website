@@ -15,7 +15,7 @@ First, install dependencies (**command line**)
 ```
 	path/to/your/forked/repository > npm install
 ```
-Then, start server using (again using **command line**)
+Then, start server (again using **command line**)
 ```
 	path/to/your/forked/repository > npm start
 ```
