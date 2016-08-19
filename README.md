@@ -1,11 +1,14 @@
-# express_website
+# Express Website
+1. initial setup
+2. routing
+3. handling json data
+4. static server (css, images, etc)
 
-In your CLI (shell)
-install all dependencies
+Install dependencies (**command line**)
 ```
-	npm install
+	path/to/your/forked/repository > npm install
 ```
 start server using command line
 ```
-	npm start
+	path/to/your/forked/repository > npm start
 ```
