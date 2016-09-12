@@ -230,10 +230,9 @@ header h1 {
 }
 
 .teammate-profession {
-	padding: .25em;
-	border-radius: 5px;
-	background-color: #E71D36;
-	color: #fff;
+	padding: .25em .25em .25em 1.25em;
+	border-left: 10px solid #E71D36;
+	color: #E71D36;
 }
 
 .teammate-details {
@@ -253,6 +252,3 @@ footer .container {
 	border-top: 1px solid #eee;
 	text-align: center;
 }
-
-
-
