@@ -6,13 +6,12 @@ function objToArray(obj) {
 				return obj[key];
 			});
 		} else {
-			throw new Error({
-				name: 'Not Object',
-				description: 'This is not an object!'
+			throw new TypeError({
+				message: 'This is not an object!'
 			});
 		}
 	} catch (error) {
-		console.error(error.name, error.description);
+		console.error(error.message);
 	}
 }
 
