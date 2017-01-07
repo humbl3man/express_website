@@ -1,5 +1,9 @@
 (function(){
 	'use strict';
+	
+	var config = {
+		port: 3005
+	};
 
 	var express = require('express');
 	var app = express();
@@ -72,7 +76,7 @@
 			);
 		}
 	});
-	app.listen(3000, function() {
-		console.log('Front end server running on port 3000');
+	app.listen(config.port, function() {
+		console.log('Front end server running on port ' + config.port);
 	});
 }());
