@@ -1,0 +1,263 @@
+$font-stack-main:         'Montserrat', sans-serif;
+$font-stack-decorative:   'Dancing Script', cursive;
+
+$color-white:              #FDFFFC;
+$color-gray:               #888;
+$color-green:              #2abb9d;
+$color-red:                #E71D36;
+$color-pink:               #E75E79;
+$color-pink-dull:          #DBBED2;
+$color-dark-gray:          #444;
+
+
+
+@-webkit-keyframes slideDown {
+	0% {
+		visibility: hidden;
+		opacity:  0;
+		transform: translateY(-22px);
+	}
+	100% {
+		visibility: visible;
+		opacity:  1;
+		transform: translateY(0);
+	}
+}
+
+
+body {
+	font-family: $font-stack-main;
+	font-size: 14px;
+	background-color: $color-white;
+  font-weight: 400;
+}
+
+.site-brand {
+	font-family: $font-stack-decorative;
+}
+
+.site-nav {
+	margin-bottom: 0;
+	text-align: right;
+	height: 50px;
+	line-height: 50px;
+}
+
+.site-nav ul {
+	margin-bottom: 0;
+}
+
+.site-nav li {
+	margin-right: -4px;
+}
+.site-nav a {
+	text-decoration: none;
+	display: block;
+	font-size: 1em;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding-left: 1em;
+	padding-right: 1em;
+	color: $color-gray;
+	overflow: hidden;
+	position: relative;
+}
+.site-nav a:after {
+	content: "";
+	display: block;
+	height: 3px;
+	width: 20px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background-color: $color-green;
+	position: absolute;
+	bottom: -10px;
+	transition: .15s ease-in;
+}
+
+.site-nav .active,
+.site-nav a:hover {
+	color: $color-green;
+}
+
+.site-nav .active:after,
+.site-nav a:hover:after {
+	bottom: 10px;
+}
+
+/*=== Front page ===*/
+
+.hero-banner {
+	border-radius: 0;
+	border: 0;
+	margin-top: 0;
+	padding-top: 120px;
+	min-height: 600px;
+	background:  transparent;
+
+	text-align: center;
+
+	animation:  slideDown .5s ease forwards;
+}
+
+.hero-banner h1 {
+	font-size: 6em;
+	margin-bottom: .75em;
+}
+
+.hero-banner .title {
+	color: $color-green;
+}
+.hero-banner p {
+	color: $color-dark-gray;
+	font-size: 2.2em;
+}
+
+.hero-banner .hilite {
+	font-family: $font-stack-decorative;
+	font-size: 120%;
+	color: $color-red;
+	border-bottom: 4px solid $color-red;
+}
+
+
+/*=== Content ===*/
+
+header {
+	padding: 50px 0;
+	min-height: 200px;
+	background-color: $color-green;
+	color: $color-white;
+	text-align: center;
+}
+
+header h1 {
+	font-size: 4em;
+	display: inline-block;
+	padding-bottom: 10px;
+	border-bottom: 10px solid;
+	font-family: $font-stack-decorative;
+}
+
+.content {
+	margin-top: 60px;
+}
+
+.content a,
+.content a:visited,
+.content a:active {
+	color:  $color-pink;
+	text-decoration: none;
+	border-bottom:  1px dotted $color-pink-dull;
+	transition:  .25s ease;
+}
+.content a:hover {
+	color:  $color-red;
+	border-color:  $color-red;
+}
+
+
+/*=== Blog Pages ===*/
+
+.blog {
+	position: relative;
+	padding: 2.4em;
+	background-color: $color-white;
+	margin-bottom: 25px;
+	border-radius:  4px;
+	transition:  background .4s ease;
+	animation: slideDown .35s ease forwards;
+}
+.blog:hover {
+	background-color: $color-white;
+}
+
+.blog-title {
+	margin-bottom: 1.25em;
+}
+
+.blog-text {
+	color: $color-gray;
+	line-height: 1.95;
+	font-size:  1.2em;
+}
+
+/*=== Buttons ===*/
+
+.c-button {
+	height: 36px;
+	padding: 8px 18px;
+	-webkit-appearance: none;
+	appearance: none;
+	text-transform: uppercase;
+	color: #FFF!important;
+	background-color: $color-green!important;
+	border: 0;
+	border-radius: 1px!important;
+	opacity: .9;
+	transition: opacity .2s;
+	text-decoration: none!important;
+}
+.c-button:hover {
+	opacity: 1;
+	color: $color-white!important;
+}
+
+/*===  Team Page ===*/
+
+.teammate {
+	padding: 1em;
+	/* border: 4px solid transparent; */
+	transition: background .15s ease,
+				transform .15s ease;
+	animation:  slideDown .5s ease;
+	overflow:  hidden;
+}
+
+.teammate:hover {
+	background-color:  $color-white;
+	transform:  translateY(2px);
+}
+
+.teammate-img {
+	margin-bottom: 2.2em;
+
+}
+
+.teammate-img-animated {
+	transition:  transform .5s ease;
+}
+
+.teammate:hover .teammate-img-animated {
+	transform:  scale(1.1) translateY(10px);
+}
+
+.teammate span {
+	display: inline-block;
+	position: relative;
+}
+
+.teammate-profession {
+	padding: .25em .25em .25em 1.25em;
+	border-left: 10px solid $color-red;
+	color: $color-red;
+}
+
+.teammate-details {
+	color: $color-gray;
+}
+
+
+/*=== Footer ===*/
+footer {
+	font-size: .825em;
+	margin-top: 2em;
+	color: $color-gray;
+}
+
+footer .container {
+	padding: 2em .25em 1em .25em;
+	border-top: 1px solid #eee;
+	text-align: center;
+}
