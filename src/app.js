@@ -8,7 +8,7 @@
 	var express = require('express');
 	var app = express();
 	var blogs = require('./mocks/blogs.json');
-	var team =require('./mocks/team.json');
+	var team = require('./mocks/team.json');
 	var pug = require('pug');
 
 	var convert = require('./helpers/convert.js');
