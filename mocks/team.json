@@ -1,19 +1,19 @@
 {
 	"John Hopkins": {
 		"name": "John Hopkins",
-		"avatar": "/static/img/team/john.jpg",
+		"avatar": "https://placeimg.com/640/480/people",
 		"profession": "Mobile App Developer",
 		"details": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet perspiciatis officiis, adipisci, cupiditate quae voluptatibus harum. Necessitatibus qui officiis, illo assumenda quae quas atque quisquam asperiores velit, fugit eligendi dolores repudiandae nemo accusantium ut facilis quaerat, molestiae ab, possimus reprehenderit iure deleniti eveniet. Consectetur ex dolores vero numquam nam iste."
 	},
 	"Mike Smith": {
 		"name": "Mike Smith",
-		"avatar": "/static/img/team/mike.jpg",
+		"avatar": "https://placeimg.com/640/480/people",
 		"profession": "Javascript Developer",
 		"details": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet perspiciatis officiis, adipisci, cupiditate quae voluptatibus harum. Necessitatibus qui officiis, illo assumenda quae quas atque quisquam asperiores velit, fugit eligendi dolores repudiandae nemo accusantium ut facilis quaerat, molestiae ab, possimus reprehenderit iure deleniti eveniet. Consectetur ex dolores vero numquam nam iste."
 	},
 	"Ben Ritzel": {
 		"name": "Ben Ritzel",
-		"avatar": "/static/img/team/ben.jpg",
+		"avatar": "https://placeimg.com/640/480/people",
 		"profession": "UX Designer",
 		"details": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae voluptatibus assumenda asperiores excepturi vitae dolorem odit adipisci, aliquid natus praesentium architecto, esse, vel officiis sed commodi quis. Enim tempore harum pariatur eligendi quos a ullam ducimus architecto itaque assumenda voluptatem numquam, eaque, non porro in repellendus! Nesciunt veritatis eligendi veniam!"
 	}

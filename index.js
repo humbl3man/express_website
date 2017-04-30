@@ -2,7 +2,7 @@
 	'use strict';
 	
 	var config = {
-		port: 3005
+		port: 3000
 	};
 
 	var express = require('express');
